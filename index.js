@@ -28,7 +28,7 @@ const buttonByCategory = async () => {
 
 
 const showCardByCategoryId = async(categoryId) => {
-  document.getElementById('loading-spiner').classList.add('hidden')
+  
     console.log(categoryId);
     selectedCategory = categoryId;
     const res = await fetch(` https://openapi.programming-hero.com/api/news/category/${categoryId}`)
@@ -40,7 +40,7 @@ const showCardByCategoryId = async(categoryId) => {
 
     cardContainer.innerHTML = ''
     allCard.forEach(card => {
-      document.getElementById('loading-spiner').classList.remove('hidden')
+      
         console.log(card)
 
         
@@ -92,10 +92,12 @@ const showCardByCategoryId = async(categoryId) => {
         `;
         cardContainer.appendChild(newsCard);
     })
+    // toggleLoadingSpinner(false);
 }
 
 
 const handleSearch = () => {
+  // toggleLoadingSpinner(true)
   const value = document.getElementById('search-box').value;
 
   if(value){
@@ -105,6 +107,17 @@ const handleSearch = () => {
     alert("Please Enter a Category Id")
   }
 }
+
+
+// const toggleLoadingSpinner = (isLoading) => {
+//   const loadingSpinner = document.getElementById('loading-spinner');
+//   if(isLoading){
+//     loadingSpinner.classList.remove('hidden');
+//   }
+//   else{
+//     loadingSpinner.classList.add('hidden');
+//   }
+// }
 
 showCardByCategoryId('08');
 
