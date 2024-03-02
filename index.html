@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/fc864e6762.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-[#F6F6F7]">
+  <!-- <div class="navbar bg-neutral text-neutral-content">
+    <button class="btn btn-ghost text-xl">daisyUI</button>
+  </div> -->
+  <div id="category-bar-container" class="category-bar">
+    <!-- <button class="bg-[#515151] border-none text-white p-3 rounded-md">Details</button> -->
+  </div>
+  <div class="search-container">
+    <input class="border border-black" type="text" id="search-box" placeholder="type Here category name...." />
+    <button onclick="handleSearch()" id="search-btn">Search</button>
+  </div>
+
+  <div id="news-container" class="news-container mt-8 w-4/5 mx-auto">
+    <!-- <div class="card card-side bg-base-100 shadow-xl p-3 pr-5">
+      <figure><img class="h-full w-[244px]" src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
+          alt="Movie" /></figure>
+      <div class="card-body">
+        <div class="flex justify-between items-center">
+          <h2 class="card-title text-[#121221] text-2xl font-bold">The best fashion influencers to follow for sartorial inspiration</h2>
+          <div class="flex items-center gap-3">
+            <p class="text-[#121221] text-lg font-bold">4.5</p>
+            <p class="text-[#121221] text-lg font-bold">Good</p>
+          </div>
+        </div>
+        <p>There’s no better time than now to familiarise yourself with the best online vintage clothing stores. If you
+          want to <br> overhaul your wardrobe for the long run, mixing vintage with high street clothing is the key to
+          being trendy as well as sustainable.
+          <br>
+          <br>
+          But vintage shopping isn’t easy, you can easily spend hours in a store and walk out with...
+        </p>
+        <!-- profile div -->
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="avatar">
+              <div class="w-24 rounded-full">
+                <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+              </div>
+            </div>
+            <div>
+              <p class="text-[#2B2C34] text-base">Jane Cooper</p>
+              <p class="text-[#718797]">Jan 10, 2022</p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <i class="fa-regular fa-eye"></i>
+            <p class="text-[#515151] text-lg font-bold"><span>1.5</span>M</p>
+          </div>
+          <div class="rating">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#515151]" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#515151]" checked />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#515151]" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#515151]" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#515151]" />
+          </div>
+        </div>
+        <div class="card-actions justify-end">
+          <button class="bg-[#515151] border-none text-white p-4">Details</button>
+        </div>
+      </div>
+    </div> -->
+  </div>
+
+  <div id="loading-spiner" class="loading-spiner">
+    <img src="https://i.gifer.com/origin/34/34338d26023e5515f6cc8969aa027bca.gif" alt="">
+  </div>
+
+
+  <script src="index.js"></script>
+  <!-- add javascript file -->
+  <!-- <script src="./app.js"></script> -->
+</body>
+
+</html>
